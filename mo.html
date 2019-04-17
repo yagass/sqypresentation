@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+            <head> 
+                  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="scriptjquery.js">
+        <script
+
+                    src="https://code.jquery.com/jquery-3.3.1.js"
+                    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                     crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    
+     <button id="affiche">Faire apparaître les lignes paires</button>
+        <button id="cache">Faire disparaître les lignes paires</button><br />
+      
+        <table border>
+               <tr><td>2</td><td>40</td><td>20</td></tr>
+                  <tr><td>love</td><td>red</td><td>canabis</td></tr>
+                   <tr><td>4</td><td>16</td><td>22</td></tr>
+                <tr><td>rasta</td><td>king</td><td>dakar</td></tr>
+                  <tr><td>8</td><td>18</td><td>24</td></tr>
+                  </table>
+        
+        <script src="jquery.js"></script>
+        <script>
+                $(function() {
+
+                   $('tr:even').css('background','WHITE');
+
+                                 $('td').css('width','200px');
+
+                              $('td').css('text-align','center');
+
+                          $('#affiche').click(function() {
+
+                        //$('tr:even').show('slow');
+              $('tr:even').fadeToggle(8000);
+            } );
+  
+            
+                      $('#cache').click(function() {
+                         $('tr:even').hide(1000);
+        
+            
+            });
+
+          });
+
+
+        </script>
+
+</body>
+</html>
